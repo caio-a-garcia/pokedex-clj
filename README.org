@@ -1,0 +1,2 @@
+* Pokedex
+  This project intends to build a fullstack clojure app using postgres as a database and a graphql API. The finished project should give easy access to all the information about your favorite Pokemon as they appear in the game series and are cataloged in Kaggle's [[https://www.kaggle.com/datasets/mrdew25/pokemon-database][Pokemon Database]].

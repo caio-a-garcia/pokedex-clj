@@ -1,0 +1,11 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.2"}
+        org.clojure/data.csv {:mvn/version "1.0.0"}
+
+        com.zaxxer/HikariCP {:mvn/version "4.0.2"}
+        seancorfield/next.jdbc {:mvn/version "1.1.613"}
+        honeysql/honeysql {:mvn/version "1.0.461"}
+        org.postgresql/postgresql {:mvn/version "42.2.19"}
+
+        functionalbytes/mount-lite {:mvn/version "2.1.5"}}
+ 
+ :paths ["src/clj" "classes" "resources"]}
