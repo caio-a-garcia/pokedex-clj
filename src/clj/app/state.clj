@@ -19,3 +19,8 @@
 (mount/defstate db
   :start (start)
   :stop (stop db))
+
+(comment
+  (mount/start)
+  (mount/status)
+  (mount/stop))
