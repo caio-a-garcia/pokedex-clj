@@ -6,6 +6,8 @@
         honeysql/honeysql {:mvn/version "1.0.461"}
         org.postgresql/postgresql {:mvn/version "42.2.19"}
 
-        functionalbytes/mount-lite {:mvn/version "2.1.5"}}
+        functionalbytes/mount-lite {:mvn/version "2.1.5"}
+
+        com.walmartlabs/lacinia {:mvn/version "0.38.0"}}
  
  :paths ["src/clj" "classes" "resources"]}

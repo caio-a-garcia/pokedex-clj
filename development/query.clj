@@ -15,7 +15,7 @@
    :from [:pokemon]
    :where [:= :pokedex_number 102]})
 
-(def ds (jdbc/get-datasource db-config))
+;; (def ds (jdbc/get-datasource db-config))
 
 (comment
   (jdbc/execute! ds [(str sqlmap)])

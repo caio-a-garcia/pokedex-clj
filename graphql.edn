@@ -1,0 +1,64 @@
+{:objects
+ {:Pokemon
+  {:description "Information available about a specific pokemon"
+   :fields
+   {:pokemon_id {:type :Int}
+    :pokedex_number {:type :Int}
+    :pokemon_name {:type :String}
+    :classification {:type :String}
+    :alternate_form_name {:type :String}
+    :original_pokemon_id {:type :Int}
+    :legendary_type {:type :String}
+    :pokemon_height {:type :Float}
+    :pokemon_weight {:type :Float}
+    :primary_type {:type :String}
+    :secondary_type {:type :String}
+    :primary_ability {:type :String}
+    :primary_ability_description {:type :String}
+    :secondary_ability {:type :String}
+    :secondary_ability_description {:type :String}
+    :hidden_ability {:type :String}
+    :hidden_ability_description {:type :String}
+    :special_event_ability {:type :String}
+    :special_event_ability_description {:type :String}
+    :male_ratio {:type :Float}
+    :female_ratio {:type :Float}
+    :base_happiness {:type :Int}
+    :game_of_origin {:type :String}
+    :health_stat {:type :Int}
+    :attack_stat {:type :Int}
+    :defense_stat {:type :Int}
+    :special_attack_stat {:type :Int}
+    :special_defense_stat {:type :Int}
+    :speed_stat {:type :Int}
+    :base_stat_total {:type :Int}
+    :health_ev {:type :Int}
+    :attack_ev {:type :Int}
+    :defense_ev {:type :Int}
+    :special_attack_ev {:type :Int}
+    :special_defense_ev {:type :Int}
+    :speed_ev {:type :Int}
+    :ev_yield_total {:type :Int}
+    :catch_rate {:type :Int}
+    :experience_growth {:type :String}
+    :experience_growth_total {:type :Int}
+    :primary_egg_group {:type :String}
+    :secondary_egg_group {:type :String}
+    :egg_cycle_count {:type :Int}
+    :pre_evolution_pokemon_id {:type :Int}
+    :evolution_details {:type :String}}}
+
+  :Input
+  {:fields
+   {:pokedex_num {:type :String}}}}
+
+ :queries
+ {:getInfoByPokedexNumber
+  {:type :Pokemon
+   :args {:pokedex_number {:type :Int}}
+   :resolve :query/getInfoByPokedexNumber}
+
+  :returnInputs
+  {:type :Input
+   :args {:pokedex_num {:type (non-null Int)}}
+   :resolve :query/returnInputs}}}
