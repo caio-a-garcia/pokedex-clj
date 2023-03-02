@@ -7,6 +7,11 @@
 
 (def schema (s/load-structure))
 
+(def sqlmap
+  {:select [:pokemon_name]
+   :from [:pokemon]
+   :where [:= :pokedex_number 102]})
+
 (defn q
   [query-string]
   (lacinia/execute schema query-string nil nil))

@@ -1,6 +1,6 @@
-(ns app.query
+(ns back.query
   (:require
-   [app.state :refer [db]]
+   [back.state :refer [db]]
    [next.jdbc :as jdbc]
    [next.jdbc.sql :as sql]
    [next.jdbc.result-set :as rs]

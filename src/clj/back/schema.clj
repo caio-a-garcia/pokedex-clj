@@ -1,9 +1,9 @@
-(ns app.schema
+(ns back.schema
   (:require
    [clojure.edn :as edn]
    [com.walmartlabs.lacinia.schema :as schema]
    [com.walmartlabs.lacinia.util :as util]
-   [app.query :as query]))
+   [back.query :as query]))
 
 (defn resolver-map
   []

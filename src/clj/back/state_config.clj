@@ -1,4 +1,4 @@
-(ns app.state-config
+(ns back.state-config
   (:require
    [mount.lite :as mount]))
 

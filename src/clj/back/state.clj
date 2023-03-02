@@ -1,9 +1,9 @@
-(ns app.state
+(ns back.state
   "Starts and stops database connection based on one or more 
   configurations."
   (:require
    [mount.lite :as mount]
-   [app.state-config :refer [config]]
+   [back.state-config :refer [config]]
    [next.jdbc.connection :as connection])
   (:import
    [com.zaxxer.hikari HikariDataSource]))
