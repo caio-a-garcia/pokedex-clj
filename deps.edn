@@ -1,15 +1,19 @@
-{:deps {org.clojure/clojure {:mvn/version "1.10.2"}
-        org.clojure/data.csv {:mvn/version "1.0.0"}
+{:deps {org.clojure/clojure              {:mvn/version "1.10.2"}
+        org.clojure/data.csv             {:mvn/version "1.0.0"}
 
-        com.zaxxer/HikariCP {:mvn/version "4.0.2"}
-        seancorfield/next.jdbc {:mvn/version "1.1.613"}
-        honeysql/honeysql {:mvn/version "1.0.461"}
-        org.postgresql/postgresql {:mvn/version "42.2.19"}
+        com.zaxxer/HikariCP              {:mvn/version "4.0.2"}
+        seancorfield/next.jdbc           {:mvn/version "1.1.613"}
+        honeysql/honeysql                {:mvn/version "1.0.461"}
+        org.postgresql/postgresql        {:mvn/version "42.2.19"}
 
-        functionalbytes/mount-lite {:mvn/version "2.1.5"}
+        functionalbytes/mount-lite       {:mvn/version "2.1.5"}
 
-        com.walmartlabs/lacinia {:mvn/version "0.38.0"}
+        com.walmartlabs/lacinia          {:mvn/version "0.38.0"}
+        com.walmartlabs/lacinia-pedestal {:mvn/version "1.1"}
+        io.pedestal/pedestal.service     {:mvn/version "0.5.10"}
+        io.pedestal/pedestal.jetty       {:mvn/version "0.5.10"}
 
-        cider/cider-nrepl {:mvn/version "0.27.4"}}
+        cider/cider-nrepl                {:mvn/version "0.30.0"}
+        nrepl/nrepl                      {:mvn/version "1.1.0-alpha1"}}
  
  :paths ["src/clj" "classes" "resources"]}

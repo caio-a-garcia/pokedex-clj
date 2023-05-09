@@ -1,7 +1,7 @@
 (ns dev.graphql
   "For manualy testing the graphql endpoints of the application."
   (:require
-   [app.schema :as s]
+   [back.schema :as s]
    [clojure.data.json :as json]
    [com.walmartlabs.lacinia :as lacinia]))
 

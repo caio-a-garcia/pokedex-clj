@@ -7,7 +7,7 @@
   [day8.re-frame/test "0.1.5"]
   [mhuebert/re-frame-simple "0.1.0"]
 
-  [cider/cider-nrepl "0.27.4"]]
+  [cider/cider-nrepl "0.30.0"]]
 
  :dev-http
  {8280 "resources/public"}
@@ -17,9 +17,9 @@
   {:target :browser
    :output-dir "resources/public/js/compiled"
    :asset-path "pokedex/js/compiled"
-   :modules {:app {:init-fn front.core/init}}
+   :modules {:app {:init-fn front.core/main}}
    :compiler-options
-   {:optimizations :simple}}
+   {:optimizations :none}}
   :browser-test
   {:target :browser-test
    :ns-regexp "-test$"
